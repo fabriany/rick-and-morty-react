@@ -1,7 +1,7 @@
 import { useRef, useState, useMemo, useCallback } from 'react'
 import { searchMovies } from '../services/movies';
 
-export function useMovies( {search, sort} ) {
+export function useMovies( { sort} ) {
 
     const [movies, setMovies] = useState([]);
     const previousSearch = useRef('')

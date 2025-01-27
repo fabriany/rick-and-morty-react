@@ -7,7 +7,7 @@ function App() {
   const [sort, setSort] = useState()
 
   const [search, setSearch] = useState('')
-  const { movies, getMovies } = useMovies({search, sort})
+  const { movies, getMovies } = useMovies({ sort})
   
 
   const handleSubmit = async (event) => {
